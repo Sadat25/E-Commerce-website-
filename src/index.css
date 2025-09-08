@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-*: initial;
+  --breakpoint-sm: 576;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1170px;
+}
+
+#header ul {
+  visibility: hidden;
+}
+
+#header:hover>ul {
+  visibility: visible;
+}
+
+#header2 ul {
+  visibility: hidden;
+}
+
+#header2:hover>ul {
+  visibility: visible;
+}
+
+#card .card {
+  visibility: hidden;
+}
+
+#card:hover>.card p {
+  visibility: visible;
+  height: 42px;
+}
+
+.slick-dots .slick-active div {
+  background-color: red;
+  border: 2px solid white;
+}
+
+.slick-slider {
+  position: relative;
+}
+
+.change .card {
+  bottom: 85px;
+}
