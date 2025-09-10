@@ -10,7 +10,7 @@ import Hover from './Hover';
 
 const NavBar = () => {
     return (
-        <div className='border-b-2 border-gray-200 font-[Poppins]'>
+        <div className='border-b-2 border-gray-200 '>
             <Container className="mt-10 mb-5 flex justify-between items-center">
                 <img src={Logo} alt="" />
                 <ul className='flex gap-12'>

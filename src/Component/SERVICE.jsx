@@ -10,17 +10,17 @@ const SERVICE = () => {
             <div>
                 <img src={DELIVERY} alt="" className='m-auto' />
                 <h2 className='font-[Inter] font-medium text-xl leading-5 tracking-[3%] mt-6 mb-2'>FREE AND FAST DELIVERY</h2>
-                <p className='font-[Poppins] text-sm leading-3.5'>Free delivery for all orders over $140</p>
+                <p className=' text-sm leading-3.5'>Free delivery for all orders over $140</p>
             </div>
             <div>
                 <img src={SERVICES} alt="" className='m-auto' />
                 <h2 className='font-[Inter] font-medium text-xl leading-5 tracking-[3%] mt-6 mb-2'>24/7 CUSTOMER SERVICE</h2>
-                <p className='font-[Poppins] text-sm leading-3.5'>Friendly 24/7 customer support</p>
+                <p className=' text-sm leading-3.5'>Friendly 24/7 customer support</p>
             </div>
             <div>
                 <img src={MONEY} alt="" className='m-auto' />
                 <h2 className='font-[Inter] font-medium text-xl leading-5 tracking-[3%] mt-6 mb-2'>MONEY BACK GUARANTEE</h2>
-                <p className='font-[Poppins] text-sm leading-3.5'>We reurn money within 30 days</p>
+                <p className=' text-sm leading-3.5'>We reurn money within 30 days</p>
             </div>
         </Container>
     )

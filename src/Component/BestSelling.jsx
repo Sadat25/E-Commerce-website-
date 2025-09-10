@@ -12,6 +12,7 @@ import laptop from '../assets/ASUS FHD Gaming Laptop.png'
 import Card from './Card';
 import { FaStar } from "react-icons/fa6";
 import Btn from './Btn';
+import SecHeading from './SecHeading';
 
 const BestSelling = () => {
 
@@ -26,17 +27,13 @@ const BestSelling = () => {
     };
 
     return (
-        <div className='mt-17.5 font-[Poppins]'>
+        <div className='mt-17.5'>
             <Container>
-                <div className='flex items-center gap-4 mb-6'>
-                    <div className=' bg-black w-5 h-10 relative'>
-                        <div className='w-5 h-10 bg-red-500 rounded-md absolute top-0 left-0'></div>
+                <div className='flex justify-between items-end '>
+                    <SecHeading heading={"This Month"} Title={"Best Selling Products"} />
+                    <div className='mb-11'>
+                        <Btn btn={"View All"} />
                     </div>
-                    <h2 className='text-[#DB4444] leading-4 font-semibold'>This Month</h2>
-                </div>
-                <div className='flex items-center justify-between mb-15'>
-                    <h1 className='font-[Inter] font-semibold text-4xl leading-12 tracking-[4%]'>Best Selling Products</h1>
-                    <Btn btn={"View All"} />
                 </div>
                 <Slider {...settings}>
                     <Card

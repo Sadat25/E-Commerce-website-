@@ -15,7 +15,7 @@ import { FaArrowUp } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className='bg-black text-white mt-[140px] font-[Poppins] relative'>
+    <div className='bg-black text-white mt-[140px]  relative'>
       <Container>
         <div className='py-20 grid grid-cols-5 gap-5'>
           <div>
@@ -50,7 +50,7 @@ const Footer = () => {
           </ul>
           <div>
             <Title20Md className="mb-6">Download App</Title20Md>
-            <p className='font-[Poppins] font-medium text-[12px] leading-[18px]'>Save $3 with App New User Only</p>
+            <p className=' font-medium text-[12px] leading-[18px]'>Save $3 with App New User Only</p>
             <div className='grid grid-cols-2 mt-2 mb-6'>
               <img src={Qr} alt="" />
               <img src={Frame} alt="" className='-ml-5 cursor-pointer' />

@@ -8,6 +8,10 @@
   --breakpoint-xl: 1170px;
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 #header ul {
   visibility: hidden;
 }

@@ -15,6 +15,7 @@ import laptop from '../assets/ASUS FHD Gaming Laptop.png'
 import Card from './Card';
 import { FaStar } from "react-icons/fa6";
 import Btn from './Btn';
+import SecHeading from './SecHeading';
 
 
 const FlashSale = () => {
@@ -62,17 +63,11 @@ const FlashSale = () => {
     };
 
     return (
-        <div className='mt-38.5 font-[Poppins]'>
+        <div className='mt-38.5 '>
             <Container className="border-b-2 border-gray-200">
-                <div className='flex items-center gap-4 mb-6'>
-                    <div className=' bg-black w-5 h-10 relative'>
-                        <div className='w-5 h-10 bg-red-500 rounded-md absolute top-0 left-0'></div>
-                    </div>
-                    <h2 className='text-[#DB4444] leading-4 font-semibold'>Today’s</h2>
-                </div>
-                <div className='flex items-center gap-22 mb-10'>
-                    <h1 className='font-[Inter] font-semibold text-4xl leading-12 tracking-[4%]'>Flash Sales</h1>
-                    <div>Timer</div>
+                <div className='flex items-end gap-22 '>
+                    <SecHeading heading={"Today’s"} Title={"Flash Sale"} />
+                    <div className='mb-11'>Timer</div>
                 </div>
                 <Slider {...settings}>
                     <Card

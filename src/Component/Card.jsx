@@ -5,7 +5,7 @@ import { FiEye } from "react-icons/fi";
 
 const Card = ({ cardimg, title, price, lessprice, less, star, rating, className, flex }) => {
     return (
-        <div className='font-[Poppins] font-medium text-[16px] leading-[24px] w-[270px] hover:shadow-lg px-1 rounded-sm relative mb-2.5' id='card'>
+        <div className=' font-medium text-[16px] leading-[24px] w-[270px] hover:shadow-lg px-1 rounded-sm relative mb-2.5' id='card'>
             <img src={cardimg} alt="" className='cursor-pointer' />
             <h1 className=' mt-4 mb-2 cursor-pointer'>{title}</h1>
             <div className={flex}>

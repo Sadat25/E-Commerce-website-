@@ -4,17 +4,14 @@ import playstationImg from '../assets/PlayStation.png'
 import Women from '../assets/Women’s Collections.png'
 import Speakers from '../assets/Speakers.png'
 import Perfume from '../assets/Perfume.png'
+import SecHeading from './SecHeading'
 
 const NewArrival = () => {
     return (
-        <Container className='mt-[168px] font-[Poppins]'>
-            <div className='flex items-center justify-center gap-4 mb-6 w-full'>
-                <div className=' bg-black w-5 h-10 relative'>
-                    <div className='w-5 h-10 bg-red-500 rounded-md absolute top-0 left-0'></div>
-                </div>
-                <h2 className='text-[#DB4444] leading-4 font-semibold'>Featured</h2>
+        <Container className='mt-[168px]'>
+            <div className="text-center">
+                <SecHeading heading={'Featured'} Title={'New Arrival'} className="inline-block" />
             </div>
-            <h1 className='font-[Inter] font-semibold text-4xl leading-12 tracking-[4%] mb-10 text-center'>New Arrival</h1>
             <div className='flex justify-between text-white'>
                 <div style={{ backgroundImage: `url(${playstationImg})` }}
                     className='h-[600px] w-[570px] flex items-end hover:scale-[1.01] cursor-pointer duration-200'>

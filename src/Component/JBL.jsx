@@ -13,7 +13,7 @@ const JBL = () => {
 
     return (
         <Container>
-            <div style={bg} className='h-[500px] font-[Poppins] pl-[56px] pt-[69px] mt-[140px]'>
+            <div style={bg} className='h-[500px]  pl-[56px] pt-[69px] mt-[140px]'>
                 <p className='text-[#00FF66] font-semibold leading-[20px] text-[16px]'>Categories</p>
                 <h2 className='text-white font-[Inter] font-semibold text-[50px] leading-[60px] py-8'>Enhance Your <br />Music Experience</h2>
                 <div className='flex gap-6 mb-10'>

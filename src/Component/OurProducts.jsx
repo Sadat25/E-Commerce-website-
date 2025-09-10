@@ -18,6 +18,7 @@ import BookSelf from '../assets/Small BookSelf.png'
 import Card from './Card';
 import { FaStar } from "react-icons/fa6";
 import Btn from './Btn';
+import SecHeading from './SecHeading';
 
 
 const OurProducts = () => {
@@ -65,15 +66,9 @@ const OurProducts = () => {
         prevArrow: <SamplePrevArrow />
     };
     return (
-        <div className='mt-[71px] font-[Poppins]'>
+        <div className='mt-[71px] '>
             <Container className="change">
-                <div className='flex items-center gap-4 mb-6'>
-                    <div className=' bg-black w-5 h-10 relative'>
-                        <div className='w-5 h-10 bg-red-500 rounded-md absolute top-0 left-0'></div>
-                    </div>
-                    <h2 className='text-[#DB4444] leading-4 font-semibold'>Our Products</h2>
-                </div>
-                <h1 className='font-[Inter] font-semibold text-4xl leading-12 tracking-[4%] mb-10'>Explore Our Products</h1>
+                <SecHeading heading={"Our Products"} Title={"Explore Our Products"} />
                 <Slider {...settings}>
                     <Card
                         cardimg={Breed}

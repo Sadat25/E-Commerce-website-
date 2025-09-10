@@ -14,6 +14,7 @@ import { TbDeviceGamepad } from "react-icons/tb";
 import { MdLaptop } from "react-icons/md";
 import { MdSpeaker } from "react-icons/md";
 import CategoryItem from './CategoryItem';
+import SecHeading from './SecHeading';
 
 
 const Category = () => {
@@ -63,13 +64,7 @@ const Category = () => {
 
     return (
         <Container className="mt-20  border-b-2 border-gray-200">
-            <div className='flex items-center gap-4'>
-                <div className=' bg-black w-5 h-10 relative'>
-                    <div className='w-5 h-10 bg-red-500 rounded-md absolute top-0 left-0'></div>
-                </div>
-                <h2 className='text-[#DB4444] leading-4 font-semibold'>Categories</h2>
-            </div>
-            <h1 className='font-[Inter] font-semibold text-4xl leading-12 tracking-[4%] mt-5 mb-15'>Browse By Category</h1>
+            <SecHeading heading={"Categories"} Title={"Browse By Category"} />
             <div className='mb-[70px]'>
                 <Slider {...settings}>
                     <CategoryItem logo={<GiSmartphone />} title={"Phones"} />
