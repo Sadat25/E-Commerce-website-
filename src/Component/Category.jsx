@@ -58,7 +58,7 @@ const Category = () => {
         autoplay: true,
         autoplaySpeed: 3000,
         nextArrow: <SampleNextArrow />,
-        prevArrow: <SamplePrevArrow />
+        prevArrow: <SamplePrevArrow />,
     };
 
 

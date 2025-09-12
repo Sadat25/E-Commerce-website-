@@ -59,7 +59,7 @@ const FlashSale = () => {
         autoplay: true,
         autoplaySpeed: 3000,
         nextArrow: <SampleNextArrow />,
-        prevArrow: <SamplePrevArrow />
+        prevArrow: <SamplePrevArrow />,
     };
 
     return (
@@ -67,69 +67,69 @@ const FlashSale = () => {
             <Container className="border-b-2 border-gray-200">
                 <div className='flex items-end gap-22 '>
                     <SecHeading heading={"Today’s"} Title={"Flash Sale"} />
-                    <div className='mb-11'>Timer</div>
+                    <div className='font-Poppins mb-11'>Timer</div>
                 </div>
                 <Slider {...settings}>
                     <Card
                         cardimg={hvg92}
                         title={'HAVIT HV-G92 Gamepad'}
-                        price={"$120"}
-                        lessprice={"$160"}
-                        less={"- 40%"}
+                        price={"120"}
+                        lessprice={"160"}
+                        less={"40"}
                         star={<> <FaStar /><FaStar /><FaStar /><FaStar /><FaStar /> </>}
                         rating={"(88)"}
                     />
                     <Card
                         cardimg={AK900}
                         title={'AK-900 Wired Keyboard'}
-                        price={"$960"}
-                        lessprice={"$1160"}
-                        less={"- 35%"}
+                        price={"960"}
+                        lessprice={"1160"}
+                        less={"35"}
                         star={<> <FaStar /><FaStar /><FaStar /><FaStar /><FaStar className='text-gray-300' /> </>}
                         rating={"(75)"}
                     />
                     <Card
                         cardimg={IPS}
                         title={'IPS LCD Gaming Monitor'}
-                        price={"$370"}
-                        lessprice={"$400"}
-                        less={"- 30%"}
+                        price={"370"}
+                        lessprice={"400"}
+                        less={"30"}
                         star={<> <FaStar /><FaStar /><FaStar /><FaStar /><FaStar /> </>}
                         rating={"(99)"}
                     />
                     <Card
                         cardimg={chair}
                         title={'S-Series Comfort Chair'}
-                        price={"$375"}
-                        lessprice={"$400"}
-                        less={"- 25%"}
+                        price={"375"}
+                        lessprice={"400"}
+                        less={"25"}
                         star={<> <FaStar /><FaStar /><FaStar /><FaStar /><FaStar className='text-gray-300' /> </>}
                         rating={"(99)"}
                     />
                     <Card
                         cardimg={RGB}
                         title={'RGB liquid CPU Cooler'}
-                        price={"$160"}
-                        lessprice={"$170"}
-                        less={"- 30%"}
+                        price={"160"}
+                        lessprice={"170"}
+                        less={"30"}
                         star={<> <FaStar /><FaStar /><FaStar /><FaStar /><FaStar /> </>}
                         rating={"(65)"}
                     />
                     <Card
                         cardimg={Canon}
                         title={'CANON EOS DSLR Camera'}
-                        price={"$360"}
-                        lessprice={"$400"}
-                        less={"- 25%"}
+                        price={"360"}
+                        lessprice={"400"}
+                        less={"25"}
                         star={<> <FaStar /><FaStar /><FaStar /><FaStar /><FaStar className='text-gray-300' /> </>}
                         rating={"(95)"}
                     />
                     <Card
                         cardimg={laptop}
                         title={'ASUS FHD Gaming Laptop'}
-                        price={"$675"}
-                        lessprice={"$700"}
-                        less={"- 35%"}
+                        price={"675"}
+                        lessprice={"700"}
+                        less={"35"}
                         star={<> <FaStar /><FaStar /><FaStar /><FaStar /><FaStar /> </>}
                         rating={"(325)"}
                     />

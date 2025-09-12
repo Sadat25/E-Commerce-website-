@@ -63,7 +63,7 @@ const OurProducts = () => {
         autoplay: true,
         autoplaySpeed: 3000,
         nextArrow: <SampleNextArrow />,
-        prevArrow: <SamplePrevArrow />
+        prevArrow: <SamplePrevArrow />,
     };
     return (
         <div className='mt-[71px] '>
@@ -73,90 +73,90 @@ const OurProducts = () => {
                     <Card
                         cardimg={Breed}
                         title={'Breed Dry Dog Food'}
-                        price={"$100"}
-                        className="hidden"
-                        flex={"flex items-center"}
+                        price={"100"}
+                        className="hidden" className2="hidden"
+                        flex={"flex items-center gap-2"}
                         star={<> <FaStar /><FaStar /><FaStar /><FaStar className='text-gray-300' /><FaStar className='text-gray-300' /> </>}
                         rating={"(35)"}
                     />
                     <Card
                         cardimg={IPS}
                         title={'IPS LCD Gaming Monitor'}
-                        price={"$370"}
-                        className="hidden"
-                        flex={"flex items-center"}
+                        price={"370"}
+                        className="hidden" className2="hidden"
+                        flex={"flex items-center gap-2"}
                         star={<> <FaStar /><FaStar /><FaStar /><FaStar /><FaStar /> </>}
                         rating={"(99)"}
                     />
                     <Card
                         cardimg={Canon}
                         title={'CANON EOS DSLR Camera'}
-                        price={"$360"}
-                        className="hidden"
-                        flex={"flex items-center"}
+                        price={"360"}
+                        className="hidden" className2="hidden"
+                        flex={"flex items-center gap-2"}
                         star={<> <FaStar /><FaStar /><FaStar /><FaStar /><FaStar className='text-gray-300' /> </>}
                         rating={"(95)"}
                     />
                     <Card
                         cardimg={hvg92}
                         title={'HAVIT HV-G92 Gamepad'}
-                        price={"$120"}
-                        className="hidden"
-                        flex={"flex items-center"}
+                        price={"120"}
+                        className="hidden" className2="hidden"
+                        flex={"flex items-center gap-2"}
                         star={<> <FaStar /><FaStar /><FaStar /><FaStar /><FaStar /> </>}
                         rating={"(88)"}
                     />
                     <Card
                         cardimg={laptop}
                         title={'ASUS FHD Gaming Laptop'}
-                        price={"$675"}
-                        className="hidden"
-                        flex={"flex items-center"}
+                        price={"675"}
+                        className="hidden" className2="hidden"
+                        flex={"flex items-center gap-2"}
                         star={<> <FaStar /><FaStar /><FaStar /><FaStar /><FaStar /> </>}
                         rating={"(325)"}
                     />
                     <Card
                         cardimg={AK900}
                         title={'AK-900 Wired Keyboard'}
-                        price={"$960"}
-                        className="hidden"
-                        flex={"flex items-center"}
+                        price={"960"}
+                        className="hidden" className2="hidden"
+                        flex={"flex items-center gap-2"}
                         star={<> <FaStar /><FaStar /><FaStar /><FaStar /><FaStar className='text-gray-300' /> </>}
                         rating={"(75)"}
                     />
                     <Card
                         cardimg={Curology}
                         title={'Curology Product Set'}
-                        price={"$500"}
-                        className="hidden"
-                        flex={"flex items-center"}
+                        price={"500"}
+                        className="hidden" className2="hidden"
+                        flex={"flex items-center gap-2"}
                         star={<> <FaStar /><FaStar /><FaStar /><FaStar /><FaStar className='text-gray-300' /> </>}
                         rating={"(145)"}
                     />
                     <Card
                         cardimg={RGB}
                         title={'RGB liquid CPU Cooler'}
-                        price={"$160"}
-                        className="hidden"
-                        flex={"flex items-center"}
+                        price={"160"}
+                        className="hidden" className2="hidden"
+                        flex={"flex items-center gap-2"}
                         star={<> <FaStar /><FaStar /><FaStar /><FaStar /><FaStar /> </>}
                         rating={"(65)"}
                     />
                     <Card
                         cardimg={chair}
                         title={'S-Series Comfort Chair'}
-                        price={"$375"}
-                        className="hidden"
-                        flex={"flex items-center"}
+                        price={"375"}
+                        className="hidden" className2="hidden"
+                        flex={"flex items-center gap-2"}
                         star={<> <FaStar /><FaStar /><FaStar /><FaStar /><FaStar className='text-gray-300' /> </>}
                         rating={"(99)"}
                     />
                     <Card
                         cardimg={BookSelf}
                         title={'Small BookSelf'}
-                        price={"$360"}
-                        className="hidden"
-                        flex={"flex items-center"}
+                        price={"360"}
+                        className="hidden" className2="hidden"
+                        flex={"flex items-center gap-2"}
                         star={<> <FaStar /><FaStar /><FaStar /><FaStar /><FaStar /> </>}
                         rating={"(65)"}
                     />

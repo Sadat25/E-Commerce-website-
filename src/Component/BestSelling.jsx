@@ -39,8 +39,8 @@ const BestSelling = () => {
                     <Card
                         cardimg={coat}
                         title={'The north coat'}
-                        price={"$260"}
-                        lessprice={"$360"}
+                        price={"260"}
+                        lessprice={"360"}
                         className="hidden"
                         star={<> <FaStar /><FaStar /><FaStar /><FaStar /><FaStar /> </>}
                         rating={"(65)"}
@@ -48,8 +48,8 @@ const BestSelling = () => {
                     <Card
                         cardimg={bag}
                         title={'Gucci duffle bag'}
-                        price={"$960"}
-                        lessprice={"$1160"}
+                        price={"960"}
+                        lessprice={"1160"}
                         className="hidden"
                         star={<> <FaStar /><FaStar /><FaStar /><FaStar /><FaStar className='text-gray-300' /> </>}
                         rating={"(75)"}
@@ -57,8 +57,8 @@ const BestSelling = () => {
                     <Card
                         cardimg={RGB}
                         title={'RGB liquid CPU Cooler'}
-                        price={"$160"}
-                        lessprice={"$170"}
+                        price={"160"}
+                        lessprice={"170"}
                         className="hidden"
                         star={<> <FaStar /><FaStar /><FaStar /><FaStar /><FaStar className='text-gray-300' /> </>}
                         rating={"(65)"}
@@ -66,8 +66,8 @@ const BestSelling = () => {
                     <Card
                         cardimg={BookSelf}
                         title={'Small BookSelf'}
-                        price={"$360"}
-                        lessprice={"$400"}
+                        price={"360"}
+                        lessprice={"400"}
                         className="hidden"
                         star={<> <FaStar /><FaStar /><FaStar /><FaStar /><FaStar /> </>}
                         rating={"(65)"}
@@ -75,8 +75,8 @@ const BestSelling = () => {
                     <Card
                         cardimg={Canon}
                         title={'CANON EOS DSLR Camera'}
-                        price={"$360"}
-                        lessprice={"$400"}
+                        price={"360"}
+                        lessprice={"400"}
                         className="hidden"
                         star={<> <FaStar /><FaStar /><FaStar /><FaStar /><FaStar className='text-gray-300' /> </>}
                         rating={"(95)"}
@@ -84,8 +84,8 @@ const BestSelling = () => {
                     <Card
                         cardimg={laptop}
                         title={'ASUS FHD Gaming Laptop'}
-                        price={"$675"}
-                        lessprice={"$700"}
+                        price={"675"}
+                        lessprice={"700"}
                         className="hidden"
                         star={<> <FaStar /><FaStar /><FaStar /><FaStar /><FaStar /> </>}
                         rating={"(325)"}

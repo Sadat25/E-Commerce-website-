@@ -15,11 +15,11 @@ import { FaArrowUp } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className='bg-black text-white mt-[140px]  relative'>
+    <div className='font-Poppins bg-black text-white mt-[140px]  relative'>
       <Container>
         <div className='py-20 grid grid-cols-5 gap-5'>
           <div>
-            <h2 className='font-[Inter] font-bold text-[24px] leading-[24px]'>Exclusive</h2>
+            <h2 className='font-Inter font-bold text-[24px] leading-[24px]'>Exclusive</h2>
             <Title20Md className="my-6">Subscribe</Title20Md>
             <p className=' leading-[24px]'>Get 10% off your first order</p>
             <div className='relative'>
