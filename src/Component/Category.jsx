@@ -49,8 +49,7 @@ const Category = () => {
         );
     }
 
-    const settings = {
-        infinite: true,
+    var settings = {
         infinite: true,
         speed: 1000,
         slidesToShow: 6,
@@ -59,12 +58,37 @@ const Category = () => {
         autoplaySpeed: 3000,
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    initialSlide: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     };
 
 
     return (
         <Container className="mt-20  border-b-2 border-gray-200">
-            <SecHeading heading={"Categories"} Title={"Browse By Category"} />
+            <SecHeading heading={"Categories"} Title={"Browse By Category"} className="ml-2 lg:ml-0" />
             <div className='mb-[70px]'>
                 <Slider {...settings}>
                     <CategoryItem logo={<GiSmartphone />} title={"Phones"} />

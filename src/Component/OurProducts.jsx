@@ -53,8 +53,7 @@ const OurProducts = () => {
         );
     }
 
-    const settings = {
-        infinite: true,
+    var settings = {
         infinite: true,
         speed: 1000,
         slidesToShow: 4,
@@ -64,11 +63,38 @@ const OurProducts = () => {
         autoplaySpeed: 3000,
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    initialSlide: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    rows: 1
+                }
+            }
+        ]
     };
+
     return (
         <div className='mt-[71px] '>
             <Container className="change">
-                <SecHeading heading={"Our Products"} Title={"Explore Our Products"} />
+                <SecHeading heading={"Our Products"} Title={"Explore Our Products"} className="ml-2 lg:ml-0" />
                 <Slider {...settings}>
                     <Card
                         cardimg={Breed}
@@ -161,7 +187,7 @@ const OurProducts = () => {
                         rating={"(65)"}
                     />
                 </Slider>
-                <Btn btn={"View All Products"} className={"mt-[37px] mb-15 m-auto block"} />
+                <Btn btn={"View All Products"} className={"mt-[37px] m-auto block"} />
             </Container>
         </div>
     )

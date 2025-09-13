@@ -16,22 +16,46 @@ import SecHeading from './SecHeading';
 
 const BestSelling = () => {
 
-    const settings = {
-        infinite: true,
+    var settings = {
         infinite: true,
         speed: 1000,
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 3000,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    initialSlide: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     };
 
     return (
         <div className='mt-17.5'>
             <Container>
                 <div className='flex justify-between items-end '>
-                    <SecHeading heading={"This Month"} Title={"Best Selling Products"} />
-                    <div className='mb-11'>
+                    <SecHeading heading={"This Month"} Title={"Best Selling Products"} className="ml-2 lg:ml-0" />
+                    <div className='lg:mb-11 mb-7'>
                         <Btn btn={"View All"} />
                     </div>
                 </div>

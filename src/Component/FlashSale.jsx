@@ -16,6 +16,7 @@ import Card from './Card';
 import { FaStar } from "react-icons/fa6";
 import Btn from './Btn';
 import SecHeading from './SecHeading';
+import CountDown from './CountDown';
 
 
 const FlashSale = () => {
@@ -50,8 +51,7 @@ const FlashSale = () => {
         );
     }
 
-    const settings = {
-        infinite: true,
+    var settings = {
         infinite: true,
         speed: 1000,
         slidesToShow: 4,
@@ -60,14 +60,41 @@ const FlashSale = () => {
         autoplaySpeed: 3000,
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    initialSlide: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     };
 
     return (
-        <div className='mt-38.5 '>
+        <div className='lg:mt-38.5 mt-10'>
             <Container className="border-b-2 border-gray-200">
-                <div className='flex items-end gap-22 '>
-                    <SecHeading heading={"Today’s"} Title={"Flash Sale"} />
-                    <div className='font-Poppins mb-11'>Timer</div>
+                <div className='lg:flex items-end gap-22 '>
+                    <SecHeading heading={"Today’s"} Title={"Flash Sale"} className="ml-2 lg:ml-0" />
+                    <div className='font-Poppins lg:mb-11 mb-3.5'>
+                        <CountDown/>
+                    </div>
                 </div>
                 <Slider {...settings}>
                     <Card

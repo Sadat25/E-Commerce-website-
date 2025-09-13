@@ -51,7 +51,7 @@ const Header = () => {
                     </Hover>
                 </div>
             </div>
-            <ul className={` ${category ? 'block' : 'hidden'} lg:block lg:w-[20%] w-full lg:border-r-2 lg:border-gray-200 pt-8`}>
+            <ul className={` ${category ? 'block' : 'hidden'} lg:block lg:w-[20%] w-full lg:border-r-2 lg:border-gray-200 lg:pt-8 pt-2`}>
                 <div className='relative group'>
                     <HeaderHover className="pr-6 flex items-center justify-between">Woman’s Fashion<IoIosArrowForward /></HeaderHover>
                     <ul className='hidden lg:group-hover:block absolute top-0 left-[99%] bg-white border border-gray-200 p-2 space-y-2 rounded-xl z-10'>
@@ -82,19 +82,19 @@ const Header = () => {
             <div className='lg:w-[75%] w-full lg:mt-10 lg:ml-12.5 m-3'>
                 <Slider {...settings}>
                     <div>
-                        <img src={banner} alt="" className='w-full lg:h-[344px] h-[244px]' />
+                        <img src={banner} alt="" className='w-full lg:h-[344px] h-[214px]' />
                     </div>
                     <div>
-                        <img src={banner1} alt="" className='w-full lg:h-[344px] h-[244px]' />
+                        <img src={banner1} alt="" className='w-full lg:h-[344px] h-[214px]' />
                     </div>
                     <div>
-                        <img src={banner2} alt="" className='w-full lg:h-[344px] h-[244px]' />
+                        <img src={banner2} alt="" className='w-full lg:h-[344px] h-[214px]' />
                     </div>
                     <div>
-                        <img src={banner3} alt="" className='w-full lg:h-[344px] h-[244px]' />
+                        <img src={banner3} alt="" className='w-full lg:h-[344px] h-[214px]' />
                     </div>
                     <div>
-                        <img src={banner4} alt="" className='w-full lg:h-[344px] h-[244px]' />
+                        <img src={banner4} alt="" className='w-full lg:h-[344px] h-[214px]' />
                     </div>
                 </Slider>
             </div>

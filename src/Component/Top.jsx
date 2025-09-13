@@ -3,9 +3,9 @@ import Container from './Container'
 
 const Top = () => {
     return (
-        <div className='font-Poppins bg-black w-full py-3 text-white  text-[14px]'>
-            <Container className="flex">
-                <div className='flex items-center justify-center w-full gap-2'>
+        <div className='font-Poppins bg-black w-full py-3 lg:px-0 px-2 text-white  text-[14px]'>
+            <Container className="flex w-full justify-between items-center">
+                <div className='flex items-center justify-center lg:w-full lg:gap-2 w-75'>
                     <p className='leading-5'>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!</p>
                     <button className='underline cursor-pointer leading-6 font-semibold'>ShopNow</button>
                 </div>

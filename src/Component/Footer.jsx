@@ -15,7 +15,7 @@ import { FaArrowUp } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className='font-Poppins bg-black text-white mt-[140px]  relative'>
+    <div className='font-Poppins bg-black text-white lg:mt-[140px] mt-10 relative'>
       <Container>
         <div className='py-20 grid grid-cols-5 gap-5'>
           <div>
@@ -67,7 +67,7 @@ const Footer = () => {
           <AiOutlineCopyright />
           Copyright Rimel 2022. All right reserved
         </p>
-        <div className='bg-gray-100 rounded-full h-[50px] w-[50px] flex items-center absolute top-[-77px] right-[51px] cursor-pointer'>
+        <div className='bg-gray-100 rounded-full h-[50px] w-[50px] flex items-center absolute lg:top-[-77px] top-2 lg:right-[51px] right-2 cursor-pointer'>
           <FaArrowUp className='text-black text-2xl m-auto' />
         </div>
       </Container>
