@@ -6,6 +6,7 @@ import Contact from './Pages/Contact.jsx'
 import About from './Pages/About.jsx'
 import SignUp from './Pages/SignUp.jsx'
 import Login from './Pages/Login.jsx';
+import WishList from './Pages/WishList.jsx';
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,7 @@ const router = createBrowserRouter([
       { path: "about", Component: About },
       { path: "sign-up", Component: SignUp },
       { path: "login", Component: Login },
+      { path: "wishlist", Component: WishList },
     ]
   }
 ]);

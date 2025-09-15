@@ -50,7 +50,7 @@ const SignUp = () => {
           <input value={name} onChange={(e) => setName(e.target.value)} type="text" placeholder='Name' className='block w-full border-b md:mt-12 mt-6 md:py-3 py-1 focus:outline-none' />
           <input value={email} onChange={(e) => setEmail(e.target.value)} type="text" placeholder='Email' className='block w-full border-b md:mt-10 mt-5 md:py-3 py-1 focus:outline-none' />
           <input value={password} onChange={(e) => setPassword(e.target.value)} type="password" placeholder='Password' className='block w-full border-b md:mt-10 mt-5 md:py-3 py-1 focus:outline-none' />
-          <button onClick={heandleClick} className="w-full mt-10 lg:px-12 px-6 lg:py-4 py-2 text-white bg-primary font-Poppins font-medium lg:text-[16px] text-sm leading-[24px] rounded-sm cursor-pointer">Create Account</button>
+          <button onClick={heandleClick} className="w-full mt-10 lg:px-12 px-6 lg:py-4 py-2 text-white bg-primary hover:bg-[#E07575] hover:text-black font-Poppins font-medium lg:text-[16px] text-sm leading-[24px] rounded-sm cursor-pointer">Create Account</button>
           <div className='md:py-4 py-2 flex md:gap-4 gap-2 justify-center border-2 border-gray-300 mt-4 md:mb-8 mb-4 rounded-sm cursor-pointer'>
             <img src={Google} alt="" />
             <p>Sign up with Google</p>

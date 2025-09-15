@@ -38,19 +38,6 @@ const NavBar = () => {
     return (
         <div className='border-b-2 border-gray-200 font-Poppins'>
             <Container className="lg:mt-10 mt-5 mb-5 ml-3 lg:ml-auto lg:flex items-center gap-[190px] w-full">
-                <ToastContainer
-                    position="top-right"
-                    autoClose={5000}
-                    hideProgressBar={false}
-                    newestOnTop={false}
-                    closeOnClick={false}
-                    rtl={false}
-                    pauseOnFocusLoss
-                    draggable
-                    pauseOnHover
-                    theme="light"
-                    transition={Bounce}
-                />
                 <div className='flex items-center justify-between'>
                     <NavLink to="/" >
                         <img src={Logo} alt="" className='lg:w-[145px] ' />
@@ -94,14 +81,36 @@ const NavBar = () => {
                                 <input value={search} onChange={(e) => setSearch(e.target.value)} type="email" placeholder='What are you looking for?' className='w-[250px] px-5 py-2.5 rounded-sm bg-[#F5F5F5] text-[14px]' />
                                 <GoSearch className='absolute top-2 right-3 text-2xl cursor-pointer' onClick={heandleSearch} />
                             </div>
-                            <div className='flex text-2xl gap-4 ml-6 '>
-                                <FaRegHeart className='cursor-pointer' />
+                            <div className='flex text-2xl gap-4 ml-6 items-center'>
+                                <NavLink to="/wishlist" >
+                                    {({ isActive }) => (
+                                        <div className={`${isActive ? "bg-gray-200" : ""} p-2 rounded-full hover:bg-gray-200`}>
+                                            <div className='relative'>
+                                                <p className='absolute -top-1.5 -right-1.5 text-[12px] h-4 w-3.5 bg-primary rounded-full text-white text-center'>4</p>
+                                                <FaRegHeart />
+                                            </div>
+                                        </div>
+                                    )}
+                                </NavLink>
                                 <BsCart3 className='cursor-pointer' />
                             </div>
                         </div>
                     </div>
                 </div>
             </Container>
+            <ToastContainer
+                position="top-right"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick={false}
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="light"
+                transition={Bounce}
+            />
         </div>
     )
 }

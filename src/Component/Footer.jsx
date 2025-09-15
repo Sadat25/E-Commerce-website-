@@ -57,19 +57,6 @@ const Footer = () => {
   return (
     <div className='font-Poppins bg-black text-white lg:mt-[140px] mt-10 relative'>
       <Container>
-        <ToastContainer
-          position="top-right"
-          autoClose={5000}
-          hideProgressBar={false}
-          newestOnTop={false}
-          closeOnClick={false}
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-          theme="light"
-          transition={Bounce}
-        />
         <div className='py-20 grid grid-cols-5 gap-5'>
           <div>
             <h2 className='font-Inter font-bold text-[24px] leading-[24px]'>Exclusive</h2>
@@ -124,6 +111,19 @@ const Footer = () => {
           <FaArrowUp className='text-black text-2xl m-auto' />
         </div>
       </Container>
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick={false}
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+        transition={Bounce}
+      />
     </div>
   )
 }

@@ -6,6 +6,7 @@ import { RiFingerprintFill } from "react-icons/ri";
 import { GiProcessor } from "react-icons/gi";
 import { CiLocationOn } from "react-icons/ci";
 import { NavLink } from "react-router-dom";
+import { ToastContainer, toast, Bounce } from 'react-toastify';
 
 
 const About = () => {
@@ -134,6 +135,19 @@ const About = () => {
 
         </div>
       </Container>
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick={false}
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+        transition={Bounce}
+      />
     </div>
   )
 }

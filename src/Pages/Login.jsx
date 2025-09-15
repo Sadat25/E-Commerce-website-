@@ -45,7 +45,7 @@ const Login = () => {
                     <input value={email} onChange={(e) => setEmail(e.target.value)} type="text" placeholder='Email' className='block w-full border-b md:mt-12 mt-6 md:py-3 py-1 focus:outline-none' />
                     <input value={password} onChange={(e) => setPassword(e.target.value)} type="password" placeholder='Password' className='block w-full border-b md:mt-10 mt-5 md:py-3 py-1 focus:outline-none' />
                     <div className='flex justify-between items-center mt-10'>
-                        <button onClick={heandleClick} className='md:px-12 px-10 lg:py-4 py-3 text-white bg-primary font-Poppins font-medium lg:text-[16px] text-sm leading-[24px] rounded-sm cursor-pointer'>Log In</button>
+                        <button onClick={heandleClick} className='md:px-12 px-10 lg:py-4 py-3 text-white bg-primary hover:bg-[#E07575] hover:text-black font-Poppins font-medium lg:text-[16px] text-sm leading-[24px] rounded-sm cursor-pointer'>Log In</button>
                         <p className='text-primary cursor-pointer'>Forget Password?</p>
                     </div>
                 </div>
