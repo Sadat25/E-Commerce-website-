@@ -8,6 +8,7 @@ import OurProducts from '../Component/OurProducts'
 import NewArrival from '../Component/NewArrival'
 import SERVICE from '../Component/SERVICE'
 
+
 const Home = () => {
   return (
     <>

@@ -24,7 +24,7 @@ const JBL = () => {
 
     return (
         <Container>
-            <div style={bg} className='lg:h-[500px] h-[360px] lg:pl-[56px] pl-8 lg:pt-[69px] pt-8 lg:mt-[140px] mt-10'>
+            <div style={bg} className='lg:h-[500px] h-[360px] lg:pl-[56px] pl-8 lg:pt-[69px] pt-8 lg:mt-[140px] mt-10 bg-cover bg-no-repeat bg-center'>
                 <p className='font-Poppins text-[#00FF66] font-semibold leading-[20px] lg:text-[16px] text-sm'>Categories</p>
                 <h2 className='text-white font-Inter font-semibold lg:text-[50px] text-2xl lg:leading-[60px] py-8'>Enhance Your <br />Music Experience</h2>
                 <div className='font-Poppins flex gap-6 mb-10'>

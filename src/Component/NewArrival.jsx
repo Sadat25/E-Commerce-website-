@@ -8,7 +8,7 @@ import SecHeading from './SecHeading'
 
 const NewArrival = () => {
     return (
-        <Container className='lg:mt-[168px] lg:ml-auto ml-1'>
+        <Container className='lg:mt-[168px] mt-10 lg:ml-auto ml-1'>
             <div className="text-center">
                 <SecHeading heading={'Featured'} Title={'New Arrival'} className="inline-block" />
             </div>

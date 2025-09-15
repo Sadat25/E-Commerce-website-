@@ -88,12 +88,12 @@ const FlashSale = () => {
     };
 
     return (
-        <div className='lg:mt-38.5 mt-10'>
+        <div className='lg:mt-38.5 mt-10 ml-1.5 lg:ml-0'>
             <Container className="border-b-2 border-gray-200">
                 <div className='lg:flex items-end gap-22 '>
                     <SecHeading heading={"Today’s"} Title={"Flash Sale"} className="ml-2 lg:ml-0" />
                     <div className='font-Poppins lg:mb-11 mb-3.5'>
-                        <CountDown/>
+                        <CountDown />
                     </div>
                 </div>
                 <Slider {...settings}>
