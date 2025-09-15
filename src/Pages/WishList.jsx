@@ -15,7 +15,6 @@ const WishList = () => {
         <div></div>
         <div className='flex items-center justify-between'>
           <SecHeading heading={"Just For You"} headingClassName="text-black" />
-          <SecHeading Title={"Just For You"} />
           <Btn1 btn={"See All"} />
         </div>
         <div></div>
