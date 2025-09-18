@@ -57,7 +57,7 @@ const Footer = () => {
   return (
     <div className='font-Poppins bg-black text-white lg:mt-[140px] mt-10 relative'>
       <Container>
-        <div className='py-20 grid grid-cols-5 gap-5'>
+        <div className='py-20 px-3 lg:px-0 flex flex-wrap items-center justify-center gap-[87px]'>
           <div>
             <h2 className='font-Inter font-bold text-[24px] leading-[24px]'>Exclusive</h2>
             <Title20Md className="my-6">Subscribe</Title20Md>
@@ -67,13 +67,13 @@ const Footer = () => {
               <VscSend className='absolute top-7 right-4 text-2xl cursor-pointer' onClick={heandleEmail} />
             </div>
           </div>
-          <div className='ml-14'>
+          <div>
             <Title20Md className="mb-6">Support</Title20Md>
-            <p className='leading-[24px]'>111 Bijoy sarani, Dhaka,  DH 1515, Bangladesh.</p>
+            <p className='leading-[24px]'>111 Bijoy sarani, Dhaka, <br/> DH 1515, Bangladesh.</p>
             <p className='my-4 leading-[24px]'>exclusive@gmail.com</p>
             <p className='leading-[24px]'>+88015-88888-9999</p>
           </div>
-          <ul className='ml-14'>
+          <ul>
             <Title20Md className="mb-6">Account</Title20Md>
             <ListItem>My Account</ListItem>
             <ListItem className="my-4">Login / Register</ListItem>
@@ -81,7 +81,7 @@ const Footer = () => {
             <ListItem className="my-4">Wishlist</ListItem>
             <ListItem>Shop</ListItem>
           </ul>
-          <ul className='ml-10'>
+          <ul>
             <Title20Md className="mb-6">Quick Link</Title20Md>
             <ListItem>Privacy Policy</ListItem>
             <ListItem className="my-4">Terms Of Use</ListItem>
@@ -91,7 +91,7 @@ const Footer = () => {
           <div>
             <Title20Md className="mb-6">Download App</Title20Md>
             <p className=' font-medium text-[12px] leading-[18px]'>Save $3 with App New User Only</p>
-            <div className='grid grid-cols-2 mt-2 mb-6'>
+            <div className='flex items-center gap-6 mt-2 mb-6'>
               <img src={Qr} alt="" />
               <img src={Frame} alt="" className='-ml-5 cursor-pointer' />
             </div>
@@ -107,7 +107,7 @@ const Footer = () => {
           <AiOutlineCopyright />
           Copyright Rimel 2022. All right reserved
         </p>
-        <div className='bg-gray-100 rounded-full h-[50px] w-[50px] flex items-center absolute lg:top-[-77px] top-2 lg:right-[51px] right-2 cursor-pointer' onClick={heandleRefresh}>
+        <div className='bg-gray-100 rounded-full h-[50px] w-[50px] flex items-center absolute lg:top-[-100px] top-2 lg:right-[250px] right-2 cursor-pointer' onClick={heandleRefresh}>
           <FaArrowUp className='text-black text-2xl m-auto' />
         </div>
       </Container>

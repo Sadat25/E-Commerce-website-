@@ -55,9 +55,9 @@ const NavBar = () => {
                                 </NavLink>
                             </ListItem>
                             <ListItem className="py-1 lg:py-0 px-3 lg:px-0 mb-1 lg:mb-0 w-62 lg:w-auto bg-gray-300 lg:bg-transparent rounded-md">
-                                <NavLink to="/contact" >
+                                <NavLink to="/shop-now" >
                                     {({ isActive }) => (
-                                        <Hover className={isActive ? "before:w-full before:bg-gray-900" : ""}>Contact</Hover>
+                                        <Hover className={isActive ? "before:w-full before:bg-gray-900" : ""}>Shop Now</Hover>
                                     )}
                                 </NavLink>
                             </ListItem>

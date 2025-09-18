@@ -78,7 +78,7 @@ const Header = () => {
                     <HeaderHover>Medicine</HeaderHover>
                     <HeaderHover>Sports & Outdoor</HeaderHover>
                     <HeaderHover>Baby’s & Toys</HeaderHover>
-                    <HeaderHover>Groceries &</HeaderHover>
+                    <HeaderHover>Groceries & Pets</HeaderHover>
                     <HeaderHover>Health & Beauty</HeaderHover>
                 </ul>
                 <div className='lg:w-[75%] w-full lg:mt-10 lg:ml-12.5 m-3'>

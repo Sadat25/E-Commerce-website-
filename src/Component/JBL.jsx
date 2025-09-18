@@ -1,11 +1,6 @@
 import React, { useState } from 'react'
 import Container from './Container'
-import bdimg from '../assets/JBL_BOOMBOX_2.png'
 import { countDownDateAndTime } from 'countdown-date-time';
-
-const bg = {
-    backgroundImage: `url(${bdimg})`,
-}
 
 const JBL = () => {
 
@@ -24,23 +19,23 @@ const JBL = () => {
 
     return (
         <Container>
-            <div style={bg} className='lg:h-[500px] h-[360px] lg:pl-[56px] pl-8 lg:pt-[69px] pt-8 lg:mt-[140px] mt-10 bg-cover bg-no-repeat bg-center'>
-                <p className='font-Poppins text-[#00FF66] font-semibold leading-[20px] lg:text-[16px] text-sm'>Categories</p>
-                <h2 className='text-white font-Inter font-semibold lg:text-[50px] text-2xl lg:leading-[60px] py-8'>Enhance Your <br />Music Experience</h2>
-                <div className='font-Poppins flex gap-6 mb-10'>
-                    <div className='h-[62px] w-[62px] rounded-full text-center bg-white text-black pt-[14px]'>
+            <div className='bg-[url(assets/JBL_BOOMBOX_2.png)] w-full lg:px-[56px] lg:py-[69px] p-6 lg:mt-[140px] mt-10 bg-cover bg-no-repeat bg-center'>
+                <p className='font-Poppins text-[#00FF66] font-semibold lg:text-[16px] text-sm'>Categories</p>
+                <h2 className='text-white font-Inter font-semibold lg:text-[50px] text-2xl lg:leading-[60px] lg:my-8 my-4'>Enhance Your <br />Music Experience</h2>
+                <div className='font-Poppins flex lg:gap-6 gap-3 lg:mb-10 mb-4'>
+                    <div className='lg:h-[62px] h-12 lg:w-[62px] w-12 rounded-full text-center bg-white text-black lg:pt-[14px] pt-1.5'>
                         <h2 className='font-semibold text-[16px] leading-[20px]'>{countDown.days}</h2>
                         <p className='text-[11px] leading-[18px]'>Days</p>
                     </div>
-                    <div className='h-[62px] w-[62px] rounded-full text-center bg-white text-black pt-[14px]'>
+                    <div className='lg:h-[62px] h-12 lg:w-[62px] w-12 rounded-full text-center bg-white text-black lg:pt-[14px] pt-1.5'>
                         <h2 className='font-semibold text-[16px] leading-[20px]'>{countDown.hours}</h2>
                         <p className='text-[11px] leading-[18px]'>Hours</p>
                     </div>
-                    <div className='h-[62px] w-[62px] rounded-full text-center bg-white text-black pt-[14px]'>
+                    <div className='lg:h-[62px] h-12 lg:w-[62px] w-12 rounded-full text-center bg-white text-black lg:pt-[14px] pt-1.5'>
                         <h2 className='font-semibold text-[16px] leading-[20px]'>{countDown.minutes}</h2>
                         <p className='text-[11px] leading-[18px]'>Minutes</p>
                     </div>
-                    <div className='h-[62px] w-[62px] rounded-full text-center bg-white text-black pt-[14px]'>
+                    <div className='lg:h-[62px] h-12 lg:w-[62px] w-12 rounded-full text-center bg-white text-black lg:pt-[14px] pt-1.5'>
                         <h2 className='font-semibold text-[16px] leading-[20px]'>{countDown.seconds}</h2>
                         <p className='text-[11px] leading-[18px]'>Seconds</p>
                     </div>

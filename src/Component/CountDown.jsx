@@ -16,25 +16,25 @@ const CountDown = () => {
     }, [])
 
     return (
-        <div className='flex gap-[17px] items-center'>
+        <div className='flex lg:gap-[17px] gap-2 items-center'>
             <div>
                 <h2 className='text-xs'>Days</h2>
-                <h2 className='text-[32px] font-bold'>{countDown.days}</h2>
+                <h2 className='lg:text-[32px] text-xl font-bold text-center'>{countDown.days}</h2>
             </div>
-            <h2 className='text-primary text-[40px] font-bold]'>:</h2>
+            <h2 className='text-primary lg:text-[40px] text-3xl font-bold]'>:</h2>
             <div>
                 <h2 className='text-xs'>Hours</h2>
-                <h2 className='text-[32px] font-bold'>{countDown.hours}</h2>
+                <h2 className='lg:text-[32px] text-xl font-bold text-center'>{countDown.hours}</h2>
             </div>
-            <h2 className='text-primary text-[40px] font-bold]'>:</h2>
+            <h2 className='text-primary lg:text-[40px] text-3xl font-bold]'>:</h2>
             <div>
                 <h2 className='text-xs'>Minutes</h2>
-                <h2 className='text-[32px] font-bold'>{countDown.minutes}</h2>
+                <h2 className='lg:text-[32px] text-xl font-bold text-center'>{countDown.minutes}</h2>
             </div>
-            <h2 className='text-primary text-[40px] font-bold]'>:</h2>
+            <h2 className='text-primary lg:text-[40px] text-3xl font-bold]'>:</h2>
             <div>
                 <h2 className='text-xs'>Seconds</h2>
-                <h2 className='text-[32px] font-bold'>{countDown.seconds}</h2>
+                <h2 className='lg:text-[32px] text-xl font-bold text-center'>{countDown.seconds}</h2>
             </div>
         </div>
     )

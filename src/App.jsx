@@ -2,11 +2,11 @@ import './App.css'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import RootLayout from './RootLayout';
 import Home from './Pages/Home.jsx'
-import Contact from './Pages/Contact.jsx'
 import About from './Pages/About.jsx'
 import SignUp from './Pages/SignUp.jsx'
 import Login from './Pages/Login.jsx';
 import WishList from './Pages/WishList.jsx';
+import ShopNow from './Pages/ShopNow.jsx';
 
 const router = createBrowserRouter([
   {
@@ -14,7 +14,7 @@ const router = createBrowserRouter([
     Component: RootLayout,
     children: [
       { index: true, Component: Home },
-      { path: "contact", Component: Contact },
+      { path: "shop-now", Component: ShopNow },
       { path: "about", Component: About },
       { path: "sign-up", Component: SignUp },
       { path: "login", Component: Login },

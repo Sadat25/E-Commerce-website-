@@ -27,12 +27,12 @@ const OurProducts = () => {
         const { style, onClick } = props;
         return (
             <div
-                className="absolute -top-22 right-0 cursor-pointer"
+                className="absolute lg:-top-22 -top-14 right-0 cursor-pointer"
                 style={{ ...style }}
                 onClick={onClick}
             >
-                <div className='bg-gray-100 rounded-full h-[46px] w-[46px] flex items-center'>
-                    <FaArrowRight className='text-black text-2xl m-auto' />
+                <div className='bg-gray-100 rounded-full lg:h-[46px] h-8 lg:w-[46px] w-8 flex items-center'>
+                    <FaArrowRight className='text-black lg:text-2xl m-auto' />
                 </div>
             </div>
         );
@@ -42,12 +42,12 @@ const OurProducts = () => {
         const { style, onClick } = props;
         return (
             <div
-                className="absolute -top-22 right-15 cursor-pointer"
+                className="absolute lg:-top-22 -top-14 lg:right-15 right-10 cursor-pointer"
                 style={{ ...style }}
                 onClick={onClick}
             >
-                <div className='bg-gray-100 rounded-full h-[46px] w-[46px] flex items-center'>
-                    <FaArrowLeft className='text-black text-2xl m-auto' />
+                <div className='bg-gray-100 rounded-full lg:h-[46px] h-8 lg:w-[46px] w-8 flex items-center'>
+                    <FaArrowLeft className='text-black lg:text-2xl m-auto' />
                 </div>
             </div>
         );
