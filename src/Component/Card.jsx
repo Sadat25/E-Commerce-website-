@@ -7,7 +7,7 @@ const Card = ({ cardimg, title, price, lessprice, less, star, rating, className,
     return (
         <div className='font-Poppins font-medium text-[16px] leading-[24px] w-[270px] rounded-sm mb-2.5 m-auto group'>
             <div className='relative overflow-hidden'>
-                <img src={cardimg} alt="" className='cursor-pointer' />
+                <img src={cardimg} alt="" className='cursor-pointer bg-[#F5F5F5]' />
                 <p className='bg-black text-white font-medium leading-10.5 text-center h-[41px] w-full rounded-b-md cursor-pointer duration-300 ease-in-out absolute -bottom-11 group-hover:bottom-0'>Add To Cart</p>
                 <p className={`px-3 py-1 bg-[#DB4444] rounded-sm text-white text-[12px] leading-[18px] block absolute top-3 left-3 ${className}`}>- {less}%</p>
                 <div className='absolute top-3 right-3 text-xl'>
