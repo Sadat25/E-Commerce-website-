@@ -4,7 +4,7 @@ import { countDownDateAndTime } from 'countdown-date-time';
 
 const JBL = () => {
 
-    const conduct_date = '2025-09-25 12:00:00';
+    const conduct_date = '2025-10-25 12:00:00';
     const [countDown, setCountDown] = useState({})
 
     useState(() => {

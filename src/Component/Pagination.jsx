@@ -2,16 +2,17 @@ import React, { useEffect, useState } from 'react';
 import ReactPaginate from 'react-paginate';
 import Card from '../Component/Card.jsx';
 import { FaStar } from "react-icons/fa6";
+import { useSelector } from 'react-redux';
 
-const Pagination = ({ itemsPerPage, products }) => {
+const Pagination = ({ itemsPerPage }) => {
 
-    const items = products
+    const allProducts = useSelector((state) => state.AllProducts.value)
+    const items = allProducts
 
     function Items({ currentItems }) {
         return (
             <>
-                {currentItems &&
-                    currentItems.map((product) => (
+                {currentItems && currentItems.map((product) => (
                         <Card
                             key={product.id}
                             cardimg={product.thumbnail}

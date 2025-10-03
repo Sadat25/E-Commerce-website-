@@ -7,6 +7,7 @@ import SignUp from './Pages/SignUp.jsx'
 import Login from './Pages/Login.jsx';
 import WishList from './Pages/WishList.jsx';
 import ShopNow from './Pages/ShopNow.jsx';
+import Cart from './Pages/Cart.jsx';
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,7 @@ const router = createBrowserRouter([
       { path: "sign-up", Component: SignUp },
       { path: "login", Component: Login },
       { path: "wishlist", Component: WishList },
+      { path: "cart", Component: Cart },
     ]
   }
 ]);

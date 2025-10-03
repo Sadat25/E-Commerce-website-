@@ -92,7 +92,9 @@ const NavBar = () => {
                                         </div>
                                     )}
                                 </NavLink>
-                                <BsCart3 className='cursor-pointer' />
+                                <NavLink to="/cart" >
+                                    <BsCart3 className='cursor-pointer' />
+                                </NavLink>
                             </div>
                         </div>
                     </div>
