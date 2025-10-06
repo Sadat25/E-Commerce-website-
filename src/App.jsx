@@ -8,6 +8,7 @@ import Login from './Pages/Login.jsx';
 import WishList from './Pages/WishList.jsx';
 import ShopNow from './Pages/ShopNow.jsx';
 import Cart from './Pages/Cart.jsx';
+import Account from './Pages/Account.jsx';
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,7 @@ const router = createBrowserRouter([
       { path: "login", Component: Login },
       { path: "wishlist", Component: WishList },
       { path: "cart", Component: Cart },
+      { path: "account", Component: Account },
     ]
   }
 ]);

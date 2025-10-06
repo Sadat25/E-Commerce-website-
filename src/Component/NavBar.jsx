@@ -4,6 +4,7 @@ import Logo from '../assets/Logo.png'
 import { GoSearch } from "react-icons/go";
 import { BsCart3 } from "react-icons/bs";
 import { FaRegHeart } from "react-icons/fa";
+import { MdOutlineAccountCircle } from "react-icons/md";
 import { ListItem } from './ListItem';
 import Hover from './Hover';
 import { FaBars } from "react-icons/fa6";
@@ -50,28 +51,28 @@ const NavBar = () => {
                             <ListItem className="py-1 lg:py-0 px-3 lg:px-0 mb-1 lg:mb-0 w-62 lg:w-auto bg-gray-300 lg:bg-transparent rounded-md">
                                 <NavLink to="/" >
                                     {({ isActive }) => (
-                                        <Hover className={isActive ? "before:w-full before:bg-gray-900" : ""}>Home</Hover>
+                                        <Hover className={isActive ? "before:w-full before:bg-gray-500" : ""}>Home</Hover>
                                     )}
                                 </NavLink>
                             </ListItem>
                             <ListItem className="py-1 lg:py-0 px-3 lg:px-0 mb-1 lg:mb-0 w-62 lg:w-auto bg-gray-300 lg:bg-transparent rounded-md">
                                 <NavLink to="/shop-now" >
                                     {({ isActive }) => (
-                                        <Hover className={isActive ? "before:w-full before:bg-gray-900" : ""}>Shop Now</Hover>
+                                        <Hover className={isActive ? "before:w-full before:bg-gray-500" : ""}>Shop Now</Hover>
                                     )}
                                 </NavLink>
                             </ListItem>
                             <ListItem className="py-1 lg:py-0 px-3 lg:px-0 mb-1 lg:mb-0 w-62 lg:w-auto bg-gray-300 lg:bg-transparent rounded-md">
                                 <NavLink to="/about" >
                                     {({ isActive }) => (
-                                        <Hover className={isActive ? "before:w-full before:bg-gray-900" : ""}>About</Hover>
+                                        <Hover className={isActive ? "before:w-full before:bg-gray-500" : ""}>About</Hover>
                                     )}
                                 </NavLink>
                             </ListItem>
                             <ListItem className="py-1 lg:py-0 px-3 lg:px-0 w-62 lg:w-auto bg-gray-300 lg:bg-transparent rounded-md">
                                 <NavLink to="/sign-up" >
                                     {({ isActive }) => (
-                                        <Hover className={isActive ? "before:w-full before:bg-gray-900" : ""}>Sign Up</Hover>
+                                        <Hover className={isActive ? "before:w-full before:bg-gray-500" : ""}>Sign Up</Hover>
                                     )}
                                 </NavLink>
                             </ListItem>
@@ -93,7 +94,21 @@ const NavBar = () => {
                                     )}
                                 </NavLink>
                                 <NavLink to="/cart" >
-                                    <BsCart3 className='cursor-pointer' />
+                                    {({ isActive }) => (
+                                        <div className={`${isActive ? "bg-gray-200" : ""} p-2 rounded-full hover:bg-gray-200`}>
+                                            <div className='relative'>
+                                                <p className='absolute -top-1.5 -right-1.5 text-[12px] h-4 w-3.5 bg-primary rounded-full text-white text-center'>2</p>
+                                                <BsCart3 />
+                                            </div>
+                                        </div>
+                                    )}
+                                </NavLink>
+                                <NavLink to="/account" >
+                                    {({ isActive }) => (
+                                        <div className={`${isActive ? "bg-primary text-gray-200" : ""} p-1 rounded-full hover:bg-primary hover:text-gray-200`}>
+                                            <MdOutlineAccountCircle className='text-[30px]'/>
+                                        </div>
+                                    )}
                                 </NavLink>
                             </div>
                         </div>

@@ -32,6 +32,7 @@ const ShopNow = () => {
     const uniqueProducts = [...new Set(products.map(item => item.category))]
     setCategory(uniqueProducts)
   }, [products])
+  console.log(products)
 
   return (
     <Container className="font-Poppins flex">
