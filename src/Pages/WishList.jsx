@@ -8,13 +8,13 @@ import rgb from '../assets/RGB liquid CPU Cooler.png'
 import GP11 from '../assets/GP11 Shooter USB Gamepad.png'
 import jacket from '../assets/Quilted Satin Jacket.png'
 import ak from '../assets/AK-900 Wired Keyboard.png'
-import hv from '../assets/hv-G92.png'
+import hv from '../assets/hv-g92.png'
 import ips from '../assets/IPS LCD Gaming Monitor.png'
 import laptop from '../assets/ASUS FHD Gaming Laptop.png'
 import { FaStar } from "react-icons/fa6";
 
 
-const WishList = () => {
+const WishList = () => {``
   return (
     <div>
       <Container>
