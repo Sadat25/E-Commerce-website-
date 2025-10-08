@@ -9,6 +9,8 @@ import WishList from './Pages/WishList.jsx';
 import ShopNow from './Pages/ShopNow.jsx';
 import Cart from './Pages/Cart.jsx';
 import Account from './Pages/Account.jsx';
+import ProductDetails from './Pages/ProductDetails.jsx';
+import Contact from './Pages/Contact.jsx';
 
 const router = createBrowserRouter([
   {
@@ -23,6 +25,8 @@ const router = createBrowserRouter([
       { path: "wishlist", Component: WishList },
       { path: "cart", Component: Cart },
       { path: "account", Component: Account },
+      { path: "product-details", Component: ProductDetails },
+      { path: "contact", Component: Contact },
     ]
   }
 ]);
