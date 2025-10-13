@@ -1,11 +1,21 @@
 import React from 'react'
 import { MdFavoriteBorder } from "react-icons/md";
 import { FiEye } from "react-icons/fi";
+import { useNavigate } from "react-router";
 
 
-const Card = ({ cardimg, title, price, lessprice, less, star, rating, className, className2, flex }) => {
+const Card = ({ cardimg, title, price, lessprice, less, star, rating, className, className2, flex, id }) => {
+
+    let navigate = useNavigate();
+
+    function handleClick() {
+        navigate(`/product-details/${id}`)
+        window.scrollTo(0, 0)
+    }
+
+
     return (
-        <div className='font-Poppins font-medium text-[16px] leading-[24px] w-[270px] rounded-sm mb-2.5 m-auto group'>
+        <div onClick={handleClick} className='font-Poppins font-medium text-[16px] leading-[24px] w-[270px] rounded-sm mb-2.5 m-auto group'>
             <div className='relative overflow-hidden'>
                 <img src={cardimg} alt="" className='cursor-pointer bg-[#F5F5F5]' />
                 <p className='bg-black text-white font-medium leading-10.5 text-center h-[41px] w-full rounded-b-md cursor-pointer duration-300 ease-in-out absolute -bottom-11 group-hover:bottom-0'>Add To Cart</p>

@@ -25,7 +25,7 @@ const router = createBrowserRouter([
       { path: "wishlist", Component: WishList },
       { path: "cart", Component: Cart },
       { path: "account", Component: Account },
-      { path: "product-details", Component: ProductDetails },
+      { path: "product-details/:id", Component: ProductDetails },
       { path: "contact", Component: Contact },
     ]
   }

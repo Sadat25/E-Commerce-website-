@@ -3,6 +3,7 @@ import ReactPaginate from 'react-paginate';
 import Card from '../Component/Card.jsx';
 import { FaStar } from "react-icons/fa6";
 import { useSelector } from 'react-redux';
+import { Rate } from "antd";
 
 const Pagination = ({ itemsPerPage }) => {
 
@@ -13,17 +14,18 @@ const Pagination = ({ itemsPerPage }) => {
         return (
             <>
                 {currentItems && currentItems.map((product) => (
-                        <Card
-                            key={product.id}
-                            cardimg={product.thumbnail}
-                            title={product.title}
-                            price={Math.floor(product.price * (1 - product.discountPercentage / 100))}
-                            lessprice={product.price}
-                            less={Math.round(product.discountPercentage)}
-                            star={<> <FaStar /><FaStar /><FaStar /><FaStar /><FaStar /> </>}
-                            rating={product.rating}
-                        />
-                    ))}
+                    <Card
+                        id={product.id}
+                        key={product.id}
+                        cardimg={product.thumbnail}
+                        title={product.title}
+                        price={Math.floor(product.price * (1 - product.discountPercentage / 100))}
+                        lessprice={product.price}
+                        less={Math.round(product.discountPercentage)}
+                        star={<Rate allowHalf defaultValue={product.rating} />}
+                        rating={product.rating}
+                    />
+                ))}
             </>
         );
     }
