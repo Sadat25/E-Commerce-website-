@@ -6,7 +6,7 @@ const CartItem = ({ img, name, Price, Subtotal, className }) => {
         <div className='grid grid-cols-4 items-center px-10 py-6 mt-10 rounded-md shadow-[0_-4px_15px,0_10px_15px] shadow-gray-100/50'>
             <div className='flex items-center gap-5'>
                 <div className='relative'>
-                    <img src={img} alt="" />
+                    <img className='h-[55px] w-[55px]' src={img} alt="" />
                     <img src={x} className={`absolute -top-1 -left-3 ${className}`} alt="" />
                 </div>
                 <p>{name}</p>

@@ -33,7 +33,7 @@ const ProductDetails = () => {
         setStock(items.data.stock)
         setLoading(true)
     }
-    console.log(products)
+    // console.log(products)
 
     useEffect(() => {
         grtAllProducts()

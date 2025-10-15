@@ -8,22 +8,24 @@ import { Rate } from "antd";
 const Pagination = ({ itemsPerPage }) => {
 
     const allProducts = useSelector((state) => state.AllProducts.value)
+    
     const items = allProducts
 
     function Items({ currentItems }) {
         return (
             <>
-                {currentItems && currentItems.map((product) => (
+                {currentItems && currentItems.map((items) => (
                     <Card
-                        id={product.id}
-                        key={product.id}
-                        cardimg={product.thumbnail}
-                        title={product.title}
-                        price={Math.floor(product.price * (1 - product.discountPercentage / 100))}
-                        lessprice={product.price}
-                        less={Math.round(product.discountPercentage)}
-                        star={<Rate allowHalf defaultValue={product.rating} />}
-                        rating={product.rating}
+                        id={items.id}
+                        key={items.id}
+                        productDetails={items}
+                        cardimg={items.thumbnail}
+                        title={items.title}
+                        price={Math.floor(items.price * (1 - items.discountPercentage / 100))}
+                        lessprice={items.price}
+                        less={Math.round(items.discountPercentage)}
+                        star={<Rate allowHalf defaultValue={items.rating} />}
+                        rating={items.rating}
                     />
                 ))}
             </>

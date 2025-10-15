@@ -10,9 +10,13 @@ import Hover from './Hover';
 import { FaBars } from "react-icons/fa6";
 import { NavLink } from "react-router-dom";
 import { ToastContainer, toast, Bounce } from 'react-toastify';
+import { useSelector } from 'react-redux';
 
 
 const NavBar = () => {
+
+    const data = useSelector((state) => state.AllProducts.cart)
+    const hart = useSelector((state) => state.AllProducts.hart)
 
     const [show, setShow] = useState(false)
     function heandleshow() {
@@ -87,7 +91,7 @@ const NavBar = () => {
                                     {({ isActive }) => (
                                         <div className={`${isActive ? "bg-gray-200" : ""} p-2 rounded-full hover:bg-gray-200`}>
                                             <div className='relative'>
-                                                <p className='absolute -top-1.5 -right-1.5 text-[12px] h-4 w-3.5 bg-primary rounded-full text-white text-center'>4</p>
+                                                <p className='absolute -top-1.5 -right-1.5 text-[12px] h-4 w-3.5 bg-primary rounded-full text-white text-center'>{hart.length}</p>
                                                 <FaRegHeart />
                                             </div>
                                         </div>
@@ -97,7 +101,7 @@ const NavBar = () => {
                                     {({ isActive }) => (
                                         <div className={`${isActive ? "bg-gray-200" : ""} p-2 rounded-full hover:bg-gray-200`}>
                                             <div className='relative'>
-                                                <p className='absolute -top-1.5 -right-1.5 text-[12px] h-4 w-3.5 bg-primary rounded-full text-white text-center'>2</p>
+                                                <p className='absolute -top-1.5 -right-1.5 text-[12px] h-4 w-3.5 bg-primary rounded-full text-white text-center'>{data.length}</p>
                                                 <BsCart3 />
                                             </div>
                                         </div>
@@ -106,7 +110,7 @@ const NavBar = () => {
                                 <NavLink to="/account" >
                                     {({ isActive }) => (
                                         <div className={`${isActive ? "bg-primary text-gray-200" : ""} p-1 rounded-full hover:bg-primary hover:text-gray-200`}>
-                                            <MdOutlineAccountCircle className='text-[30px]'/>
+                                            <MdOutlineAccountCircle className='text-[30px]' />
                                         </div>
                                     )}
                                 </NavLink>

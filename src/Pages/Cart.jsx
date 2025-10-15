@@ -6,10 +6,12 @@ import Btn1 from '../Component/Btn1';
 import Btn from '../Component/Btn';
 import { NavLink } from 'react-router-dom';
 import CartItem from '../Component/CartItem'
-import lcd from '../assets/LCD.png'
-import h1 from '../assets/H1.png'
+import { useSelector } from 'react-redux';
 
 const Cart = () => {
+
+    const product = useSelector((state) => state.AllProducts.cart)
+
     return (
         <Container>
             <BreadCumb />
@@ -20,19 +22,18 @@ const Cart = () => {
                     <div className='text-center'>Quantity</div>
                     <div className='text-center'>Subtotal</div>
                 </div>
-                <CartItem
-                    img={lcd}
-                    name={"LCD Monitor"}
-                    Price={"650"}
-                    Subtotal={"650"}
-                />
-                <CartItem
-                    img={h1}
-                    name={"H1 Gamepad"}
-                    Price={"550"}
-                    Subtotal={"1100"}
-                    className={"hidden"}
-                />
+                {
+                    product.map((item) => (
+                        <CartItem
+                            key={item.id}
+                            img={item.thumbnail}
+                            name={item.title}
+                            Price={item.price}
+                            Subtotal={item.price}
+                            className={"hidden"}
+                        />
+                    ))
+                }
                 <div className='mt-6 flex justify-between items-center'>
                     <NavLink to={"/shop-now"} >
                         <Btn1 className="border-[2px] border-gray-400" btn={"Return To Shop"} />
